@@ -1,0 +1,4 @@
+*.user
+temp/build
+temp/testing
+temp/images
