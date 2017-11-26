@@ -1,5 +1,4 @@
 *.user
 *~
-build/
 testing/
 images/
