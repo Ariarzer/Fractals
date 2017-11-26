@@ -1,4 +1,4 @@
 *.user
-temp/build
-temp/testing
-temp/images
+build/
+testing/
+images/
