@@ -8,5 +8,8 @@
 // Maht
 #include <math.h>
 
+//SLT
+#include <vector>
+
 #endif // STD
 
