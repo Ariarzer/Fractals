@@ -4,6 +4,5 @@
 *.py
 data/*.png
 data/*.dat
-testing/
 images/
 build/
