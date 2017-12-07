@@ -4,15 +4,18 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    classes/z.cpp \
     utils/fractal.cpp \
     testing/testing.cpp \
-    testing/uni.cpp
+    testing/uni.cpp \
+    classes/ComplexNumber.cpp
 
 HEADERS += \
-    classes/z.h \
     utils/fractal.h \
     testing/testing.h \
     utils/fractal.h \
-    stdafx.h
+    stdafx.h \
+    classes/ComplexNumber.h
+
+DISTFILES += \
+    plot.py
 

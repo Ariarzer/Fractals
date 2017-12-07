@@ -1,15 +1,17 @@
 #include "stdafx.h"
 
-#include "classes/z.h"
+#include "classes/ComplexNumber.h"
+#include "testing/testing.h"
 #include "utils/fractal.h"
 
 int main()
 {
-    Z c(0.285, 0.01);
-    std::fstream file("fractal.dat", std::ios_base::out);
+    ComplexNumber c(0, 1);
+    std::fstream file("../data/fractal.dat", std::ios_base::out);
     if (!file.is_open())
         std::cout << "Error open data-file." << std::endl;
-    julia(file, 1000, 2, c);
+    //julia(file, 100, 2, c, 45.0, 3, 0.7);
     file.close();
+    test();
     return 0;
 }
