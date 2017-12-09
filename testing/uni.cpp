@@ -1,39 +1,54 @@
 #include "testing.h"
 
-int uni_abs(double re, double im, ComplexNumber _true)
+int uni_abs()
 {
-    ComplexNumber z(re, im);
-    std::cout << "uni_abs " << z.abs() << std::endl;
+    ComplexNumber z[3] = {(0., 0.), (1., 1.), (1. ,1.)};
+    for(int i = 0; i < 3; i++)
+    {
+        std::cout << "uni_abs " << z[i].abs() << std::endl;
+    }
     return 0;
 }
 
-int uni_arg(double re, double im, ComplexNumber _true)
+int uni_arg()
 {
-    ComplexNumber z(re, im);
-    std::cout << "uni_arg " << z.arg() * 180 / M_PI << std::endl;
+    ComplexNumber z[3] = {(0., 0.), (1., 1.), (1. ,1.)};
+    for(int i = 0; i < 3; i++)
+    {
+        std::cout << "uni_arg " << z[i].arg() * 180 / M_PI << std::endl;
+    }
     return 0;
 }
 
-int uni_rot(double re, double im, double angle, ComplexNumber _true)
+int uni_rot()
 {
-    ComplexNumber z(re, im);
-    z.rotate(angle);
-    std::cout << "uni_rot " << z.Re << "    " << z.Im << std::endl;
+    ComplexNumber z[3] = {(0., 0.), (1., 1.), (1. ,1.)};
+    for(int i = 0; i < 3; i++)
+    {
+        z[i].rotate(45);
+        std::cout << "uni_rot " << z[i].Re << "    " << z[i].Im << std::endl;
+    }
     return 0;
 }
 
-int uni_str(double re, double im, double stretchRe, double stretchIm, ComplexNumber _true)
+int uni_str()
 {
-    ComplexNumber z(re, im);
-    z.stretch(stretchIm, stretchRe);
-    std::cout << "uni_str " << z.Re << "    " << z.Im << std::endl;
+    ComplexNumber z[3] = {(0., 0.), (1., 1.), (1. ,1.)};
+    for(int i = 0; i < 3; i++)
+    {
+        z[i].stretch(2, 1);
+        std::cout << "uni_str " << z[i].Re << "    " << z[i].Im << std::endl;
+    }
     return 0;
 }
 
-int uni_pow(double re, double im, double pow, ComplexNumber _true)
+int uni_pow()
 {
-    ComplexNumber z(re, im);
-    z.power(pow);
-    std::cout << "uni_pow " << z.Re << "    " << z.Im << std::endl;
+    ComplexNumber z[3] = {(0., 0.), (1., 1.), (1. ,1.)};
+    for(int i = 0; i < 3; i++)
+    {
+        z[i].power(2);
+        std::cout << "uni_pow " << z[i].Re << "    " << z[i].Im << std::endl;
+    }
     return 0;
 }
